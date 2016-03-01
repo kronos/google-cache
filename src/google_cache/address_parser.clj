@@ -1,15 +1,11 @@
 (ns google-cache.address-parser
-  (:require [clojure.string :as str :refer [split trim join lower-case]]))
+  (:require [clojure.string :as str :refer [split trim join lower-case replace]])
+  (:refer-clojure :exclude [replace]))
 
-(defn parse [address parser]
-  (parser address))
-
-(defn base-parser [address] address)
-
-(defn simple-parse [address]
+(defn parse [address]
   (->> (-> address
            (lower-case)
-           (str/replace "," " ")
+           (replace "," " ")
            (trim)
            (split #"\s+")
            (sort))
