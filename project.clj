@@ -7,7 +7,6 @@
                  [funcool/catacumba      "0.11.1"]
                  [com.taoensso/timbre    "4.3.0"]
                  [org.clojure/core.async "0.2.374"]
-                 [org.immutant/immutant  "2.1.2"]
                  [http-kit               "2.1.19"]]
   :main ^:skip-aot google-cache.core)
 

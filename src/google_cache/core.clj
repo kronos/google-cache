@@ -22,8 +22,8 @@
     (http/bad-request "{\"error\":\"Address param is empty\"}")))
 
 (def routes
-  (ct/routes [ ;[:error error-handler]
-              [:any (autoreloader)]
+  (ct/routes [[:error error-handler]
+              ; [:any (autoreloader)]
               [:get "geocode" geocode-handler]
              ]))
 
