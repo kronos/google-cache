@@ -2,7 +2,7 @@
   (:require [google-cache.backend :as backend]
             [catacumba.core       :as ct]
             [catacumba.http       :as http]
-            [catacumba.handlers.misc :refer (autoreloader)]
+;            [catacumba.handlers.misc :refer (autoreloader)]
             [taoensso.timbre      :as log])
   (:gen-class))
 
